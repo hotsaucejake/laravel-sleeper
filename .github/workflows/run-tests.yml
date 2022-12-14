@@ -46,5 +46,11 @@ jobs:
       - name: List Installed Dependencies
         run: composer show -D
 
+      - name: Create .env file
+        uses: SpicyPizza/create-envfile@v1.3.0
+        with:
+          envkey_SLEEPER_USERNAME: ${{ secrets.SLEEPER_USERNAME }}
+          envkey_SLEEPER_USER_ID: ${{ secrets.SLEEPER_USER_ID }}
+
       - name: Execute tests
         run: vendor/bin/pest
