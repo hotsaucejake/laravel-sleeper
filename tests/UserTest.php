@@ -1,7 +1,6 @@
 <?php
 
 use HOTSAUCEJAKE\LaravelSleeper\Facades\LaravelSleeper;
-
 use function PHPUnit\Framework\assertNotNull;
 
 it('can get user by username', function () {
