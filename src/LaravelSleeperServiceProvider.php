@@ -11,7 +11,7 @@ class LaravelSleeperServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $source = realpath(__DIR__ . '/../config/sleeper.php');
+        $source = realpath(__DIR__.'/../config/sleeper.php');
 
         $this->publishes([$source => config_path('sleeper.php')]);
 

@@ -2,8 +2,8 @@
 
 namespace HOTSAUCEJAKE\LaravelSleeper\Tests;
 
-use Orchestra\Testbench\TestCase as Orchestra;
 use HOTSAUCEJAKE\LaravelSleeper\LaravelSleeperServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
