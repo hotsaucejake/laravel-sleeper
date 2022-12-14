@@ -20,7 +20,6 @@ class LaravelSleeper
      * User
      * ====================================
      */
-
     public function getUserByName(string $name)
     {
         return $this->makeRequest('GET', "v1/user/{$name}");
