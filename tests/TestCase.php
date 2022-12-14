@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         $dotenv = Dotenv::createImmutable(__DIR__.'/../');
-        $dotenv->load();
+        $dotenv->safeLoad();
     }
 
     protected function getPackageProviders($app)
