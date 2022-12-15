@@ -129,4 +129,19 @@ class LaravelSleeper
     {
         return $this->makeRequest('GET', "v1/draft/{$draft_id}/traded_picks");
     }
+
+    /**
+     * ====================================
+     * Players
+     * ====================================
+     */
+    public function getAllPlayers(string $sport = 'nfl')
+    {
+        return $this->makeRequest('GET', "v1/players/{$sport}");
+    }
+
+    public function getTrendingPlayers(string $type = 'add', string $sport = 'nfl', int $lookback_hours = 24, int $limit = 25)
+    {
+        return $this->makeRequest('GET', "v1/players/{$sport}/trending/{$type}?lookback_hours={$lookback_hours}&limit={$limit}");
+    }
 }
