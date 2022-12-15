@@ -1,6 +1,5 @@
 # An API wrapper for the fantasy sleeper app
 
-https://stackoverflow.com/questions/254514/enumerations-on-php
 
 ## Installation
 
