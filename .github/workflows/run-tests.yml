@@ -51,6 +51,9 @@ jobs:
         with:
           envkey_SLEEPER_USERNAME: ${{ secrets.SLEEPER_USERNAME }}
           envkey_SLEEPER_USER_ID: ${{ secrets.SLEEPER_USER_ID }}
+          envkey_SLEEPER_AVATAR: ${{ secrets.SLEEPER_AVATAR }}
+          envkey_SLEEPER_LEAGUE: ${{ secrets.SLEEPER_LEAGUE }}
+          envkey_SLEEPER_DRAFT: ${{ secrets.SLEEPER_DRAFT }}
 
       - name: Execute tests
         run: vendor/bin/pest

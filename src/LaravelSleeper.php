@@ -99,4 +99,34 @@ class LaravelSleeper
     {
         return $this->makeRequest('GET', "v1/state/{$sport}");
     }
+
+    /**
+     * ====================================
+     * Drafts
+     * ====================================
+     */
+    public function getDraftsForUser(string $user_id, int $season, string $sport = 'nfl')
+    {
+        return $this->makeRequest('GET', "v1/user/{$user_id}/drafts/{$sport}/{$season}");
+    }
+
+    public function getLeagueDrafts(string $league_id)
+    {
+        return $this->makeRequest('GET', "v1/league/{$league_id}/drafts");
+    }
+
+    public function getSpecificDraft(string $draft_id)
+    {
+        return $this->makeRequest('GET', "v1/draft/{$draft_id}");
+    }
+
+    public function getDraftPicks(string $draft_id)
+    {
+        return $this->makeRequest('GET', "v1/draft/{$draft_id}/picks");
+    }
+
+    public function getDraftTradedPicks(string $draft_id)
+    {
+        return $this->makeRequest('GET', "v1/draft/{$draft_id}/traded_picks");
+    }
 }
