@@ -3,7 +3,6 @@
 namespace HOTSAUCEJAKE\LaravelSleeper;
 
 use HOTSAUCEJAKE\LaravelSleeper\Traits\MakesHttpRequests;
-use Sport;
 
 class LaravelSleeper
 {
