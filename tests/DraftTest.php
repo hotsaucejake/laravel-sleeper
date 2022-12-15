@@ -1,7 +1,6 @@
 <?php
 
 use HOTSAUCEJAKE\LaravelSleeper\Facades\LaravelSleeper;
-
 use function PHPUnit\Framework\assertTrue;
 
 it('can get all drafts for user', function () {
@@ -9,7 +8,7 @@ it('can get all drafts for user', function () {
     assertTrue((bool) $response);
 });
 
-it('can get all drafts for a league', function (){
+it('can get all drafts for a league', function () {
     $response = LaravelSleeper::getLeagueDrafts(env('SLEEPER_LEAGUE'));
     assertTrue((bool) $response);
 });
