@@ -29,4 +29,19 @@ class LaravelSleeper
     {
         return $this->makeRequest('GET', "v1/user/{$id}");
     }
+
+    /**
+     * ====================================
+     * Avatars
+     * ====================================
+     */
+    public function showAvatar(string $avatar_id)
+    {
+        return "https://sleepercdn.com/avatars/{$avatar_id}";
+    }
+
+    public function showAvatarThumbnail(string $avatar_id)
+    {
+        return "https://sleepercdn.com/avatars/thumbs/{$avatar_id}";
+    }
 }
