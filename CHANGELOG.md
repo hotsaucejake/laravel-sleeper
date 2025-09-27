@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-sleeper` will be documented in this file.
 
+## v1.3.0 - 2025-09-27
+
+Updates for laravel 12
+
 ## v1.2.1 - 2025-09-27
 
 Updates for Laravel 11
